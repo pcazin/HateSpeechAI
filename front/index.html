@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Hate Speech Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Hate Speech <span style="color: rgb(223, 43, 43);">Analyzer</span></h1>
+
+        <div class="container">
+            <div class="section-text neumorphic-box">
+                <h2>Analyse de text</h2>
+                <textarea id="simple-text" placeholder="Entrer un message a analyser..."></textarea>
+                <div style="display: flex; gap: 50px;">
+                    <button id="analyze-text-btn" class="neumorphic-btn">Lancer</button>
+                    <div id="result-positive-text"></div>
+                    <div id="result-negative-text"></div>
+                </div>
+                <p id="detection-text" class="detection">Détection en cours...</p>
+            </div>
+    
+            <div class="section-tweet neumorphic-box">
+                <h2>Analyse de tweet et réponses</h2>
+                <textarea id="tweet-object" placeholder="Coller un objet JSON avec des réponses a analyser..."></textarea>
+                <button id="analyze-tweet-btn" class="neumorphic-btn">Lancer</button>
+                <p id="detection-tweet" class="detection">Détection en cours...</p>
+                <div id="tweet-result" class="result-box"></div>
+            </div>
+        </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
